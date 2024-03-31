@@ -75,7 +75,7 @@ header img {
 .hero-info {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 180px;
   margin-top: 20px;
   font-family: sans-serif;
 }
