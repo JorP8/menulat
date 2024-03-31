@@ -1,0 +1,99 @@
+html {
+  overflow-y: hidden;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  color: #f67c66;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(240, 240, 240);
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 100vh;
+  background-color: #f67c669a;
+  display: none;
+}
+.menu.active {
+  display: block;
+  transition: all 2s ease;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  padding-left: 5vw;
+  gap: 20px;
+  margin-top: 5vh;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/img/paisaje.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.hero-info h2 {
+  color: #25a2c3;
+  font-size: 40px;
+}
+.hero-info a {
+  background-color: #f67c66;
+  font-size: 25px;
+  margin: 5px 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hero-info p {
+  color: grey;
+  font-weight: 500;
+  font-size: 25px;
+}
